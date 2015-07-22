@@ -1,0 +1,144 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Proteins and K Values Small Multiples</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script type="text/javascript" src="js/libs/d3.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Proteins and K Values</h1>
+    <div id="lead">
+      <p>Proteins A, B, and C, and their respective K values under different conditions.</p>
+      
+    </div>
+  <div id="kButtons">
+    <p> 
+      <input type= "button" id= "K1Button" value= "K1">
+      <input type= "button" id= "K2Button" value= "K2">
+      <input type= "button" id= "K3Button" value= "K3">
+      <input type= "button" id= "K4Button" value= "K4"> 
+      <input type= "button" id= "K5Button" value= "K5">
+      <input type= "button" id= "K6Button" value= "K6">
+      <input type= "button" id= "K7Button" value= "K7">
+      <input type= "button" id= "K8Button" value= "K8">
+      <input type= "button" id= "K9Button" value= "K9">
+
+  </div>
+    <div id= "kValues">
+
+    </div> 
+      <div id="button-wrap">
+        <div id="count" class="button active">COUNT</div>
+        <div id="name" class="button">NAME</div>
+      </div>
+      <div id= "group1">
+        <div id="vis">
+        <div id="barChart"><script src="bar_chart_d3.js"></script></div>
+        </div>
+      </div>
+  </div> <!--! end of #container -->
+<script type="text/javascript">
+var x;
+kButtons()
+function kButtons() {
+  K1Button.addEventListener("click", K1ButtonChangeHandler, false);
+  K2Button.addEventListener("click", K2ButtonChangeHandler, false);
+  K3Button.addEventListener("click", K3ButtonChangeHandler, false);
+  K4Button.addEventListener("click", K4ButtonChangeHandler, false);
+  K5Button.addEventListener("click", K5ButtonChangeHandler, false);
+  K6Button.addEventListener("click", K6ButtonChangeHandler, false);
+  K7Button.addEventListener("click", K7ButtonChangeHandler, false);
+  K8Button.addEventListener("click", K8ButtonChangeHandler, false);
+  K9Button.addEventListener("click", K9ButtonChangeHandler, false);
+}
+function K1ButtonChangeHandler(evt) {
+  x=177.77129;
+  document.getElementById("kValues").innerHTML = "K1 = " + x;
+};
+
+function K2ButtonChangeHandler(evt) {
+  x=1312.4133;
+  document.getElementById("kValues").innerHTML = "K2 = " + x;
+};
+
+function K3ButtonChangeHandler(evt) {
+  x=58.458505;
+  document.getElementById("kValues").innerHTML = "K3 = " + x;
+};
+
+function K4ButtonChangeHandler(evt) {
+  x= 61.854282;
+  document.getElementById("kValues").innerHTML = "K4 = " + x;
+};
+
+function K5ButtonChangeHandler(evt) {
+  x= 1491.1846;
+  document.getElementById("kValues").innerHTML = "K5 = " + x;
+};
+
+function K6ButtonChangeHandler(evt) {
+  x= 1371.8718;
+  document.getElementById("kValues").innerHTML = "K6 = " + x;
+};
+
+function K7ButtonChangeHandler(evt) {
+  x= 48.13793;
+  document.getElementById("kValues").innerHTML = "K7 = " + x;
+};
+
+function K8ButtonChangeHandler(evt) {
+  x= 1;
+  document.getElementById("kValues").innerHTML = "K8 = " + x;
+};
+
+function K9ButtonChangeHandler(evt) {
+  x = 1;
+  document.getElementById("kValues").innerHTML = "K9 = " + x;
+};
+</script>
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+
+  <script src="js/libs/coffee-script.js"></script>
+  <script src="js/libs/isotope.pkgd.min.js"></script>
+  
+  <script src="js/libs/queue.min.js"></script>
+  <script type="text/coffeescript" src="coffee/small_multiples.coffee"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    });
+  </script>
+
+
+  <script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
