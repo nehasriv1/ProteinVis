@@ -61,33 +61,29 @@
     </nav>
 
   <div class="container theme-showcase" role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Proteins and K Values</h1>
         <p></p>
       </div>
-
       <div class="page-header">
         <h1></h1>
       </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li><a href="#"></a>
+      <div id="proteinIDButton">
+        <input type= "button" id= "button" value= "197805">
+      </div></li>
+      <div id="proteinIDButton">
+        <input type= "button" id= "button2" value= "197806">
+      </div>
+        </ul>
+      </div>
+      <div id="Values"></div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="#"></a>
-              <div id="proteinIDButton">
-                <input type= "button" id= "button" value= "197805">
-              </div></li>
-            <li><a href="#"></a></li>
-              <div id="proteinIDButton">
-                <input type= "button" id= "button2" value= "197806">
-              </div>
-          </ul>
-        </div>
-  
-  <div id="Values">
   </div>
 <script type="text/javascript">
 proteinID()
@@ -104,7 +100,7 @@ function ButtonChangeHandler() {
   A= 0.00631934;
   B= 56.70435784;
   C= 0.01841957;
-  document.getElementById("Values").innerHTML = "Solution Id= " + solutionID + " A= " + A + " B= " + B + " C= "+ C;
+  document.getElementById("Values").innerHTML = "Solution ID= " + solutionID + " A= " + A + " B= " + B + " C= "+ C;
 };
 
 function button2ChangeHandler() {
@@ -112,7 +108,7 @@ function button2ChangeHandler() {
   A= 1.18295397;
   B= 0.881890417;
   C= 0.88189041;
-  document.getElementById("Values").innerHTML= "Solution Id= "+ solutionID+ " A= " + A + " B= " + B + " C= "+ C;
+  document.getElementById("Values").innerHTML= "Solution ID= "+ solutionID+ " A= " + A + " B= " + B + " C= "+ C;
 };
 </script>
   </body>

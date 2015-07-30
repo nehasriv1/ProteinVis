@@ -116,4 +116,7 @@ svg {
   width: 150px;
 }
 
+#proteinIDButton {
+  display: inline-block;
+}
 
