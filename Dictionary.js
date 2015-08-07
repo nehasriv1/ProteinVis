@@ -7,7 +7,6 @@ function Dictionary() {
 	this.count = count;
 }
 
-// key is experimentID
 function add(key,value) {
 	this.datastore[key] = value;
 }
@@ -42,9 +41,7 @@ function clear() {
 
 var test = new Dictionary();
 test
-test.add('10', "2");
-console.log(test);
-// test.add("197806", 2);
-// test.showAll();
-// test.count();
-// print(test.count());
+test.add("197805", 1);
+test.add("197806", 2);
+test.showAll();
+console.log(test.showAll());
